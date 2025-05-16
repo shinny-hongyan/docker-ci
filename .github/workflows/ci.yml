@@ -33,3 +33,10 @@ jobs:
           vcpkgArguments: "@${{ github.workspace }}/workspace/vcpkg-x64-linux.txt"
           vcpkgDirectory: "${{ github.workspace }}/vcpkg"
           appendedCacheKey: ${{ hashFiles('workspace/vcpkg-x64-linux.txt') }}
+
+      - name: Run vcpkg v3
+        uses: lukka/run-vcpkg@v7
+        with:
+          vcpkgArguments: "workspace/vcpkg-x64-linux.txt"
+          vcpkgDirectory: "vcpkg"
+          appendedCacheKey: ${{ hashFiles('workspace/vcpkg-x64-linux.txt') }}
