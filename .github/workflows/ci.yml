@@ -8,10 +8,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-2204]
+        os: [ubuntu-latest]
         build-type: [Release]
         include:
-          - os: ubuntu-2204
+          - os: ubuntu-latest
 
     steps:
       - name: Checkout
