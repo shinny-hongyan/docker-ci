@@ -1,0 +1,4 @@
+--triplet
+x64-linux
+http-parser
+asio
